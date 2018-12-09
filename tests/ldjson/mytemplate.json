@@ -1,0 +1,7 @@
+{
+    "@context" : "https://schema.org",
+    "@type" : "Product",
+    "name": "{{name}}",
+    "description": "My new project DjLD",
+    "url": "{{url}}"
+}

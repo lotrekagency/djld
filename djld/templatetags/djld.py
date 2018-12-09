@@ -24,11 +24,11 @@ def structured_data(context, template, data_context={}):
         )
         with open(os.path.join(ld_files_path, template)) as template_file:
             tempalte_content = template_file.read()
-            try:
-                json.loads(tempalte_content)
-            except ValueError:
-                raise DjLdException('Invalid JSON content in template')
             tmpl = Template(tempalte_content)
             rendered = tmpl.render(Context(data_context))
+            try:
+                json.loads(rendered)
+            except ValueError:
+                raise DjLdException('Invalid JSON content in template')
     rendered = '<script type="application/ld+json">\n' + rendered + '\n</script>'
     return mark_safe(rendered)

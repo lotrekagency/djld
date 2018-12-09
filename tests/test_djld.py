@@ -25,3 +25,17 @@ def test_djld_with_context():
     assert 'application/ld+json' in str(response.content)
     assert 'https://lotrek.it' in str(response.content)
     assert 'Human Before Digital' in str(response.content)
+    assert '@type' not in str(response.content)
+
+
+def test_djld_with_template_sintax():
+    response = render({}, 'tests/index_with_template.html', {
+        'myjson' : {
+            'url' : 'https://lotrek.it',
+            'name' : 'Human Before Digital'
+        }
+    })
+    assert 'application/ld+json' in str(response.content)
+    assert 'https://lotrek.it' in str(response.content)
+    assert 'Human Before Digital' in str(response.content)
+    assert '@type' in str(response.content)
