@@ -1,0 +1,3 @@
+
+class DjLdException(Exception):
+    pass
