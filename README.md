@@ -2,6 +2,11 @@
 
 Structured data with Django
 
+[![Latest Version](https://img.shields.io/pypi/v/djld.svg)](https://pypi.python.org/pypi/djld/)
+[![codecov](https://codecov.io/gh/lotrekagency/djld/branch/master/graph/badge.svg)](https://codecov.io/gh/lotrekagency/djld)
+[![Build Status](https://travis-ci.org/lotrekagency/djld.svg?branch=master)](https://travis-ci.org/lotrekagency/djld)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/lotrekagency/djld/blob/master/LICENSE)
+
 ## Installation
 ```sh
 pip install djld

@@ -3,10 +3,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='djld',
-    version='0.0.1',
+    version='1.0.0',
     url='https://github.com/lotrekagency/djld',
     install_requires=[],
-    description="Django structured data",
+    description="Structured data with Django",
     long_description=open('README.rst').read(),
     license="MIT",
     author="Lotrek",
