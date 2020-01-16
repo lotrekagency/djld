@@ -27,6 +27,7 @@ def structured_data(context, template, data_context={}):
             tmpl = Template(tempalte_content)
             rendered = tmpl.render(Context(data_context))
             rendered = rendered.replace('\n', '').replace('\r', '')
+            rendered = rendered.replace('\t', '  ').replace('\0', '')
             try:
                 json.loads(rendered)
             except ValueError:
