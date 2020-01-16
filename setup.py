@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='djld',
-    version='1.0.1',
+    version='1.0.2',
     url='https://github.com/lotrekagency/djld',
     install_requires=[],
     description="Structured data with Django",
